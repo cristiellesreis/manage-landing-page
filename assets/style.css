@@ -18,7 +18,12 @@
 }
 
 html{
-    background-image: url('/images/bg-tablet-pattern.svg');
+    background-image: url('/images/bg-simplify-section-desktop.svg');
+}
+
+main{
+    display: flex;
+    justify-content: center;
 }
 
 .cabeçalho{
@@ -27,15 +32,14 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10rem;
+    gap: 4rem;
     justify-content: center;
 }
 
 .nav-superior{
     display: flex;
     flex-direction: row;
-    gap: 15rem;
-
+    gap: 6rem;
 }
 
 .nav-superior a{
@@ -44,10 +48,9 @@ html{
     margin-left: 2rem;
     text-decoration: none;
     color: var(--neutral-very-dark-blue);
-
 }
 
-.nav-superior button{
+.botao-start{
     width: 8rem;
     height: 2rem;
     font-family: var(--font);
@@ -55,6 +58,93 @@ html{
     background-color: var(--primary-bright-red);
     border: none;
     border-radius: 1rem;
+}
+
+
+.conteudo-intro, .conteudo-info{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin-top: 3rem;
+    gap: 2rem;
+    margin-top: 6rem;
+    align-items: center;
+}
+
+.conteudo-intro img{
+    width: 30rem;
+}
+
+.container-intro{
+    width: 22rem;
+}
+
+.conteudo-info{
+    align-items: flex-start;
+
+}
+.container-info{
+    width: 23rem;
+}
+
+h1, h2{
+    font-family: var(--font);
+    font-size: 2.5rem;
+    color: var(--primary-dark-blue);
+    margin-bottom: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h4{
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--primary-dark-blue);
+    margin-bottom: 1rem;
+}
+
+p{
+    font-family: var(--font);
+    color: var(--neutral-dark-grayish-blue);
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+span{
+    background-color: var(--primary-bright-red);
+    border-radius: 1rem;
+    width: 4rem;
+    color: var(--neutral-very-light-gray);
+    font-family: var(--font);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-intro button{
+    margin-top: 2rem;
+}
+
+
+.container-topicos{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.item-topico{
+    width: 25rem;
+    text-align: justify;
+}
+    
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: flex-start;
 }
 
 
