@@ -53,7 +53,12 @@ body{
     font-size: 15px;
     margin-left: 2rem;
     text-decoration: none;
-    color: var(--neutral-very-dark-blue);
+    color: var(--primary-dark-blue);
+    font-weight: bold;
+}
+
+.nav-superior a:hover{
+    opacity: .5;
 }
 
 .botao-start, .botao-email{
@@ -62,12 +67,23 @@ body{
     font-family: var(--font);
     color: var(--neutral-very-light-gray);
     background-color: var(--primary-bright-red);
-    border: none;
     border-radius: 2rem;
+    border:none;
+    box-shadow: 0px 8px 15px -5px #f25f3a;
+    cursor: pointer;
 }
 
 .botao-email{
     width: 4rem;
+    box-shadow: none;
+}
+
+.botao-email:hover{
+    background-color:#f2947d;
+}
+
+.botao-start:hover{
+    opacity: .60;
 }
 
 .conteudo-intro, .conteudo-info{
@@ -221,16 +237,17 @@ body{
 
 .rodape-banner button{
     background-color: var(--neutral-very-light-gray);
-    color: var(--primary-bright-red);
+    color: var(--primary-bright-red); 
 }
 
 .rodape{
-    height: 12rem;
+    height: 15rem;
     background-color: var(--neutral-very-dark-blue);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 2.5rem;
 }
 
 .rodape-menu{
@@ -238,9 +255,9 @@ body{
     display: grid;
     grid-template-columns: 10rem 10rem;
     height: 9rem;
-    justify-content: space-evenly;
     align-items: center;
-    margin-left: 5rem;
+    column-gap: 6rem;
+    margin-left: 4rem;
 }
 
 .rodape-menu a{
@@ -248,7 +265,10 @@ body{
     text-decoration: none;
     font-family: var(--font);
     font-size: 13px;
+}
 
+.rodape-menu a:hover{
+    color: var(--primary-bright-red);
 }
 
 .logo-icones{
@@ -256,18 +276,27 @@ body{
     flex-direction: column;
     align-items: center;
     height: 12rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .logo-icones a{
     margin-right: .5rem;
 }
 
-.rodape-email{
-    width: 20rem;
+.svg-img:hover {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(72%) saturate(833%) hue-rotate(333deg) brightness(99%) contrast(91%);
 }
 
-.rodape-email input{
+.rodape-email{
+    width: 20rem;
+    text-align: end;
+}
+
+.email{
+    margin-bottom: 3rem;
+}
+
+.email input{
     height: 2.5rem;
     width: 12rem;
     border-radius: 1.5rem;
@@ -276,6 +305,14 @@ body{
     font-family: var(--font);
     margin-right: .5rem;
 }
+
+.copyright{
+    color: var(--neutral-very-light-gray);
+    font-family: var(--font);
+    opacity: .6;
+    font-size:13px;
+}
+
 
 
 
