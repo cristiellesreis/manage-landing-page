@@ -207,6 +207,7 @@ body{
 .rodape-banner{
     height: 10rem;
     background-color: var(--primary-bright-red);
+    background-image: url(/images/bg-simplify-section-desktop-footer.svg);
     display: flex;
     justify-content: center;
     gap: 36rem;
