@@ -18,7 +18,7 @@
 }
 
 main{
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -30,13 +30,13 @@ body{
 
 }
 
+
 .cabeçalho{
     height: 6rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10rem;
     justify-content: center;
     position: relative;
 }
@@ -61,7 +61,7 @@ body{
     opacity: .5;
 }
 
-.botao-start, .botao-email{
+.botao-start, .botao-email, .botao-start-footer{
     width: 8rem;
     height: 3rem;
     font-family: var(--font);
@@ -97,7 +97,8 @@ body{
 }
 
 .conteudo-intro img{
-    width: 30rem;
+    width: 100%;
+    height: auto;
 }
 
 .container-intro{
@@ -147,6 +148,7 @@ body{
     flex-direction: row;
     gap: 2rem;
     margin-bottom: 2rem;
+
 }
 
 .container-topicos span{
@@ -190,6 +192,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
+
 }
 
 .card-user img{
@@ -206,6 +209,7 @@ body{
     text-align: center;
     margin: 0 2.5rem 0 2.5rem;
     width: 26rem;
+
 }
 
 .comentarios{
@@ -214,6 +218,7 @@ body{
     flex-direction: column;
     margin-bottom: 12rem;
     margin-top: 5rem;
+
 }
 
 .comentarios button{
@@ -226,7 +231,7 @@ body{
     background-image: url(/images/bg-simplify-section-desktop-footer.svg);
     display: flex;
     justify-content: center;
-    gap: 36rem;
+    gap: 35rem;
     align-items: center;
 }
 
@@ -235,9 +240,17 @@ body{
     width: 25rem;
 }
 
-.rodape-banner button{
+
+
+.botao-start-footer{
     background-color: var(--neutral-very-light-gray);
-    color: var(--primary-bright-red); 
+    color: var(--primary-bright-red);
+    font-weight: 700;
+
+}
+
+.botao-start-footer :hover{
+    color:#f2947d;
 }
 
 .rodape{
@@ -313,7 +326,67 @@ body{
     font-size:13px;
 }
 
+@media (max-width: 768px) {
+    .conteudo-intro, .conteudo-info{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: center;
+        text-align: center;
+    }
 
+    .conteudo-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .conteudo-intro img{
+        width: 50%;
+    }
+
+    .cards{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+    }
+
+    .card-user p{
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .container-topicos{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .rodape-banner{
+        height: 20rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .rodape{
+        height: 15rem;
+        background-color: var(--neutral-very-dark-blue);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+   
+    
+    
+
+}
 
 
 
