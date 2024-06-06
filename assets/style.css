@@ -17,6 +17,11 @@
     padding: 0;
 }
 
+html{
+    height: 100vh;
+}
+
+
 main{
     display: grid;
     justify-content: center;
@@ -27,38 +32,53 @@ body{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 
-.cabeçalho{
-    height: 6rem;
-    width: 100%;
+
+.nav-bar{
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
 }
 
-.nav-superior{
+.nav-list{
     display: flex;
-    flex-direction: row;
-    gap: 6rem;
     align-items: center;
 }
 
-.nav-superior a{
-    font-family: var(--font);
-    font-size: 15px;
-    margin-left: 2rem;
+.nav-list a:hover{
+    opacity: .5;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 9rem;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
     text-decoration: none;
+    font-family: var(--font);
+    font-size: .9rem;
     color: var(--primary-dark-blue);
     font-weight: bold;
 }
 
-.nav-superior a:hover{
-    opacity: .5;
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
 }
 
 .botao-start, .botao-email, .botao-start-footer{
@@ -91,14 +111,10 @@ body{
     grid-template-columns: 500px 500px;
     margin-top: 3rem;
     gap: 2rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
     align-items: center;
     justify-content: center;
-}
-
-.conteudo-intro img{
     width: 100%;
-    height: auto;
 }
 
 .container-intro{
@@ -128,6 +144,9 @@ body{
     font-family: var(--font);
     font-size: 16px;
     color: var(--primary-dark-blue);
+}
+
+.card-user h4{
     margin-bottom: 1rem;
 }
 
@@ -137,6 +156,11 @@ body{
     font-size: 16px;
     line-height: 1.5rem;
     margin-top: 1.5rem;
+}
+
+.item-topico p{
+    padding-left: 5rem;
+    width: 28rem;
 }
 
 .container-intro button{
@@ -163,9 +187,10 @@ body{
     justify-content: center;
 }
 
-.item-topico{
-    width: 25rem;
-    text-align: justify;
+.titulo-topico{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .carrossel{
@@ -181,7 +206,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 0 0 1rem;
 }
 
 .card-user{
@@ -264,7 +289,6 @@ body{
 }
 
 .rodape-menu{
-    width: 30rem;
     display: grid;
     grid-template-columns: 10rem 10rem;
     height: 9rem;
@@ -289,7 +313,8 @@ body{
     flex-direction: column;
     align-items: center;
     height: 12rem;
-    justify-content: space-around;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .logo-icones a{
@@ -326,7 +351,82 @@ body{
     font-size:13px;
 }
 
-@media (max-width: 768px) {
+footer{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body{
+        background-image: url(/images/bg-simplify-section-desktop.svg);
+        background-position: top center;
+        background-repeat: repeat-y;
+        background-size: auto;
+    }
+
+
+    .conteudo-intro, .conteudo-info{
+        display: flex;
+    }
+
+
+    .nav-item{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center ;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+
+    }
+
+    .menu-mobile{
+        width: 87%;
+        margin: 2rem 0rem 0rem 1.5rem;
+        display: block;
+        background-color: #ffffff;
+        border-radius: .5rem;
+        box-shadow: .3px .3px 1px;
+        position: absolute;
+    }
+
+    .open{
+        display:none;
+    }
+
+    .tela-escura{
+        background-color: rgb(0, 0, 0);
+        opacity: .40;
+    }
+
+    .item-topico{
+        width: 22rem;
+        text-align: justify;
+    }
+
     .conteudo-intro, .conteudo-info{
         display: flex;
         flex-direction: column-reverse;
@@ -341,20 +441,35 @@ body{
     }
 
     .conteudo-intro img{
-        width: 50%;
+        width: 100%;
+    }
+    
+    .carrossel{
+        width: 375px;
+        overflow-x: auto;
     }
 
-    .cards{
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        display: flex;
+    .card-user{
+        width: 22rem;
+        height: 16rem;
+        margin-top: 3rem;
+     
     }
 
     .card-user p{
-        width: auto;
-        flex-wrap: wrap;
+        width: 20rem;
     }
+
+    .rodape-banner h2{
+        width: 23rem;
+    }
+
+    .comentarios{
+        margin-bottom: 5rem;
+
+    }
+
+    
 
     .container-topicos{
         display: flex;
@@ -373,7 +488,7 @@ body{
     }
 
     .rodape{
-        height: 15rem;
+        height: 35rem;
         background-color: var(--neutral-very-dark-blue);
         display: flex;
         flex-direction: row;
@@ -382,9 +497,89 @@ body{
         gap: 2.5rem;
     }
 
-   
+    .rodape-email{
+        position: absolute;
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+        gap: 21rem;
+        align-items: center;
+    }
+
+    .logo-icones{
+        display: flex;
+        position: absolute;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: 20rem;
+       
+    }
+
+    .rodape-menu{
+        grid-template-columns: 4rem 6rem;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        margin: 0 0 7rem 0;
+    }
+
     
-    
+    .titulo-topico{
+        background-color: var(--neutral-very-pale-red);
+        border-radius: 2rem 0 0 2rem;
+        width: 22rem;
+    }
+
+    .item-topico p{
+        width: 20rem;
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .container-intro p{
+        width: 21rem;
+    }
+
+    .container-info h2{
+        padding: 0 2rem;
+    }
+
+    .response-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .email input{
+        height: 2.5rem;
+        width: 15rem;
+        
+    }
+
+    .icones-redes img{
+        width: 2rem;
+
+    }
+
+    .icones-redes{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+
+    }
 
 }
 

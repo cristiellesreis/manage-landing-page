@@ -15,20 +15,40 @@
 
 <body>
   <header>
-    <div class="cabeçalho">
-      <nav class="nav-superior">
-        <img src="images/logo.svg" alt="logotipo">
+    <nav>
+      <div class="nav-bar">
+
         <div>
-          <a href="">Pricing</a>
-          <a href="">Product</a>
-          <a href="">About Us</a>
-          <a href="">Careers</a>
-          <a href="">Community</a>
+          <img src="images/logo.svg" alt="logotipo">
         </div>
-        <div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><i class="fa-solid fa-bars fa-2xl icon"></i></button>
+        </div>
+        
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+          </ul>
+        </div>
+
+        <div class="login-button">
           <button class="botao-start">Get Started</button>
         </div>
-      </nav>
+      </div>
+    </nav>
+    
+    <div class="menu-mobile">
+      <ul>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+      </ul>
     </div>
   </header>
 
@@ -50,24 +70,20 @@
         </div>
         <div>
           <div class="container-topicos">
-            <span>01</span>
-            
             <div class="item-topico">
-              <h4>Track company-wide progress</h4>
+              <div class="titulo-topico"><div><span>01</span></div><h4>Track company-wide progress</h4></div>
               <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>  
             </div> 
           </div>
           <div class="container-topicos">
-            <span>02</span>
             <div class="item-topico">
-              <h4>Advanced built-in reports</h4>
+              <div class="titulo-topico"><div><span>02</span></div><h4>Advanced built-in reports</h4></div>
               <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed</p>  
             </div> 
           </div>
           <div class="container-topicos">
-            <span>03</span>
             <div class="item-topico">
-              <h4>Everything you need in one place</h4>
+              <div class="titulo-topico"><div><span>03</span></div><h4>Everything you need in one place</h4></div>
               <p>Stop jumping from one service to another to communicate, store files, trock tasks and share documents. Manage offers an all in-in-one team productivity solution.</p>  
             </div> 
           </div>
@@ -122,8 +138,9 @@
     <section>
       <div class="rodape">
         <div class="logo-icones">
+          
           <div><img src="/images/logo-footer.svg" alt=""></div>
-          <div>
+          <div class="icones-redes">
             <a href="#"><img class="svg-img" src="/images/icon-facebook.svg" alt="">
             </a>
             <a href="#"><img class="svg-img" src="/images/icon-youtube.svg" alt=""></a>
@@ -143,6 +160,7 @@
           <a href="">About Us</a>
         </div>
 
+
         <div class="rodape-email">
           <div class="email">
             <input type="text" placeholder="Updates in your inbox...">      
@@ -155,8 +173,6 @@
       </div>
     </section>
   </footer>
-
-
 
   <script src="assets/arquivo.js"></script>
 </body>
