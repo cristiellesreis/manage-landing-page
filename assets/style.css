@@ -138,13 +138,13 @@ body{
     font-size: 2rem;
 }
 
-.item-topico h4, .card-user h4{
+.item-topico h4, .card-user h3{
     font-family: var(--font);
     font-size: 16px;
     color: var(--primary-dark-blue);
 }
 
-.card-user h4{
+.card-user h3{
     margin-bottom: 1rem;
 }
 
@@ -222,7 +222,7 @@ body{
     margin-top: -2rem;
 }
 
-.card-user h4{
+.card-user h3{
     margin-top: 1.5rem;
 }
 
