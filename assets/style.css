@@ -357,15 +357,23 @@ footer{
         padding: 0 1rem 0 1rem;
         width: auto;
         align-items: flex-start;
+        position: relative;
+        z-index: 2000;
     }
 
     .nav-item{
         display: none;
+        padding-bottom: 2rem;
     }
 
     .nav-list{
         display: none;
     }
+
+    .nav-link{
+        font-size: 1.2rem;
+    }
+    
 
     .login-button{
         display: none;
@@ -385,12 +393,11 @@ footer{
         display: flex;
         flex-direction: column;
         text-align: center ;
-        padding-bottom: 1rem;
+        margin: 3rem 0rem 1rem 0rem;    
     }
 
     .menu-mobile .nav-item{
         display: block;
-        padding-top: 1.2rem;
     }
 
     .menu-mobile{
@@ -400,11 +407,16 @@ footer{
         background-color: #ffffff;
         border-radius: .5rem;
         box-shadow: .3px .3px 1px;
-        position: absolute;
+        position:absolute;
+        z-index: 2000;
     }
 
     .open{
         display:none;
+    }
+
+    .icon{
+        color: var(--primary-dark-blue);
     }
 
     .response-menu{
@@ -542,6 +554,21 @@ footer{
 
     .icones-redes img{
         width: 2rem;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+      
+    .overlay.show {
+        display: block;
     }
 
 }
