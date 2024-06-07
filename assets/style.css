@@ -407,7 +407,7 @@ footer{
     .menu-mobile{
         width: 87%;
         margin: 2rem 0rem 0rem 1.5rem;
-        display: block;
+        display: none;
         background-color: #ffffff;
         border-radius: .5rem;
         box-shadow: .3px .3px 1px;
@@ -416,7 +416,7 @@ footer{
     }
 
     .open{
-        display:none;
+        display:block;
     }
 
     .icon{
