@@ -1,179 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/b144170c7e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/style.css">
-  <title>Frontend Mentor | Manage landing page</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b144170c7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <div class="nav-bar">
+  <body>
+    <header>
+      <nav>
+        <div class="nav-bar">
 
-        <div>
-          <img src="images/logo.svg" alt="logotipo">
-        </div>
-        <div class="mobile-menu-icon">
-          <button onclick="menuShow()"><i class="fa-solid fa-bars fa-2xl icon"></i></button>
-        </div>
-        
-        <div class="nav-list">
-          <ul>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
-          </ul>
-        </div>
-
-        <div class="login-button">
-          <button class="botao-start">Get Started</button>
-        </div>
-      </div>
-    </nav>
-    
-    <div class="menu-mobile">
-      <ul>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <article>
-      <section class="conteudo-intro">
-        <div class="container-intro">
-          <h1>Bring everyone together to build better products.</h1>
-          <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-          <button class="botao-start">Get Started</button>
-        </div>
-        <img src="images/illustration-intro.svg" alt="">
-      </section>
-
-      <section class="conteudo-info">
-        <div class="container-info">
-            <h2>What's different about Manage?</h2>
-            <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
-        </div>
-        <div>
-          <div class="container-topicos">
-            <div class="item-topico">
-              <div class="titulo-topico"><div><span>01</span></div><h4>Track company-wide progress</h4></div>
-              <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>  
-            </div> 
+          <div>
+            <img src="images/logo.svg" alt="logotipo">
           </div>
-          <div class="container-topicos">
-            <div class="item-topico">
-              <div class="titulo-topico"><div><span>02</span></div><h4>Advanced built-in reports</h4></div>
-              <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed</p>  
-            </div> 
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><i class="fa-solid fa-bars fa-2xl icon"></i></button>
           </div>
-          <div class="container-topicos">
-            <div class="item-topico">
-              <div class="titulo-topico"><div><span>03</span></div><h4>Everything you need in one place</h4></div>
-              <p>Stop jumping from one service to another to communicate, store files, trock tasks and share documents. Manage offers an all in-in-one team productivity solution.</p>  
-            </div> 
-          </div>
-        </div>
-      </section>
-      <section class="comentarios">
-        <h2>What they've said</h2>
-        <div class="carrossel">
-          <div class="cards">
-            <div class="card-user">
-              <img src="images/avatar-anisha.png" alt="anisha li">
-              <h4>Anisha Li</h4>
-              <p>"Manage has supercharged our team's workflow. The ability to maintain on larger milestones at all times keeps everyone motivated."</p>
-            </div>
-            <div class="card-user">
-              <img src="images/avatar-ali.png" alt="anisha li">
-              <h4>Ali Bravo</h4>
-              <p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
-            </div>
-            <div class="card-user">
-              <img src="images/avatar-richard.png" alt="anisha li">
-              <h4>Richard Watts</h4>
-              <p>"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
-            </div>
-            <div class="card-user">
-              <img src="images/avatar-shanai.png" alt="anisha li">
-              <h4>Shanai Gough</h4>
-              <p>"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive."</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <button class="botao-start">Get Started</button>
-        </div>
-      </section>
-    </article>
-  </main>
-
-  <footer>
-
-    <section>
-      <div class="rodape-banner">
-        <div>        
-          <h2>Simplify how your team works today.</h2>
-        </div>
-        <div>
-          <button class="botao-start-footer"><span>Get Started</span></button>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="rodape">
-        <div class="logo-icones">
           
-          <div><img src="/images/logo-footer.svg" alt=""></div>
-          <div class="icones-redes">
-            <a href="#"><img class="svg-img" src="/images/icon-facebook.svg" alt="">
-            </a>
-            <a href="#"><img class="svg-img" src="/images/icon-youtube.svg" alt=""></a>
-            <a href="#"><img class="svg-img" src="/images/icon-twitter.svg" alt=""></a>
-            <a href="#"><img class="svg-img" src="/images/icon-pinterest.svg" alt=""></a>
-            <a href="#"><img class="svg-img" src="/images/icon-instagram.svg" alt=""></a>
+          <div class="nav-list">
+            <ul>
+              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+            </ul>
+          </div>
+
+          <div class="login-button">
+            <button class="botao-start">Get Started</button>
           </div>
         </div>
-
-        <div class="rodape-menu">
-          <a href="">Home</a>
-          <a href="">Careers</a>
-          <a href="">Pricing</a>
-          <a href="">Community</a>
-          <a href="">Products</a>
-          <a href="">Privacy Policy</a>
-          <a href="">About Us</a>
-        </div>
-
-
-        <div class="rodape-email">
-          <div class="email">
-            <input type="text" placeholder="Updates in your inbox...">      
-            <button class="botao-email">Go</button>
-          </div>
-          <div class="copyright">
-            <span>Copyright 2020. All Rights Reserved.</span>
-          </div>
-        </div>
+      </nav>
+      
+      <div class="menu-mobile">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+        </ul>
       </div>
-    </section>
-  </footer>
+    </header>
 
-  <script src="assets/arquivo.js"></script>
-</body>
+    <main>
+      <article>
+        <section class="conteudo-intro">
+          <div class="container-intro">
+            <h1>Bring everyone together to build better products.</h1>
+            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+            <button class="botao-start">Get Started</button>
+          </div>
+          <img src="images/illustration-intro.svg" alt="">
+        </section>
+
+        <section class="conteudo-info">
+          <div class="container-info">
+              <h2>What's different about Manage?</h2>
+              <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+          </div>
+          <div>
+            <div class="container-topicos">
+              <div class="item-topico">
+                <div class="titulo-topico"><div><span>01</span></div><h4>Track company-wide progress</h4></div>
+                <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>  
+              </div> 
+            </div>
+            <div class="container-topicos">
+              <div class="item-topico">
+                <div class="titulo-topico"><div><span>02</span></div><h4>Advanced built-in reports</h4></div>
+                <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed</p>  
+              </div> 
+            </div>
+            <div class="container-topicos">
+              <div class="item-topico">
+                <div class="titulo-topico"><div><span>03</span></div><h4>Everything you need in one place</h4></div>
+                <p>Stop jumping from one service to another to communicate, store files, trock tasks and share documents. Manage offers an all in-in-one team productivity solution.</p>  
+              </div> 
+            </div>
+          </div>
+        </section>
+
+        <section class="comentarios">
+          <h2>What they've said</h2>
+          <div class="carrossel">
+            <div class="cards">
+              <div class="card-user">
+                <img src="images/avatar-anisha.png" alt="anisha li">
+                <h4>Anisha Li</h4>
+                <p>"Manage has supercharged our team's workflow. The ability to maintain on larger milestones at all times keeps everyone motivated."</p>
+              </div>
+              <div class="card-user">
+                <img src="images/avatar-ali.png" alt="anisha li">
+                <h4>Ali Bravo</h4>
+                <p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+              </div>
+              <div class="card-user">
+                <img src="images/avatar-richard.png" alt="anisha li">
+                <h4>Richard Watts</h4>
+                <p>"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
+              </div>
+              <div class="card-user">
+                <img src="images/avatar-shanai.png" alt="anisha li">
+                <h4>Shanai Gough</h4>
+                <p>"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive."</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="botao-start">Get Started</button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+
+      <section>
+        <div class="rodape-banner">
+          <div>        
+            <h2>Simplify how your team works today.</h2>
+          </div>
+          <div>
+            <button class="botao-start-footer"><span>Get Started</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="rodape">
+          <div class="logo-icones">
+            
+            <div><img src="/images/logo-footer.svg" alt=""></div>
+            <div class="icones-redes">
+              <a href="#"><img class="svg-img" src="/images/icon-facebook.svg" alt="">
+              </a>
+              <a href="#"><img class="svg-img" src="/images/icon-youtube.svg" alt=""></a>
+              <a href="#"><img class="svg-img" src="/images/icon-twitter.svg" alt=""></a>
+              <a href="#"><img class="svg-img" src="/images/icon-pinterest.svg" alt=""></a>
+              <a href="#"><img class="svg-img" src="/images/icon-instagram.svg" alt=""></a>
+            </div>
+          </div>
+
+          <div class="rodape-menu">
+            <a href="#">Home</a>
+            <a href="#">Careers</a>
+            <a href="#">Pricing</a>
+            <a href="#">Community</a>
+            <a href="#">Products</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">About Us</a>
+          </div>
+
+          <div class="rodape-email">
+            <div class="email">
+              <input type="text" placeholder="Updates in your inbox...">      
+              <button class="botao-email">Go</button>
+            </div>
+            <div class="copyright">
+              <span>Copyright 2020. All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </footer>
+
+    <script src="assets/arquivo.js"></script>
+
+  </body>
 </html>
