@@ -138,7 +138,7 @@ body{
     font-size: 2rem;
 }
 
-.item-topico h4, .card-user h3{
+.item-topico h3, .card-user h3{
     font-family: var(--font);
     font-size: 16px;
     color: var(--primary-dark-blue);
