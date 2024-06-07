@@ -20,3 +20,37 @@ function menuShow() {
     }
 }
 
+
+const slides = document.querySelector('.slides');
+const indicatorsContainer = document.querySelector('.indicators');
+
+// Cria um indicador para cada slide
+document.querySelectorAll('.slide').forEach((slide, index) => {
+  const indicator = document.createElement('div');
+  indicator.classList.add('indicator');
+  indicator.addEventListener('click', () => {
+    goToSlide(index);
+  });
+  indicatorsContainer.appendChild(indicator);
+});
+
+let currentIndex = 0;
+
+function goToSlide(index) {
+  currentIndex = index;
+  const translateValue = -index * 100 + '%';
+  slides.style.transform = 'translateX(' + translateValue + ')';
+
+  // Atualiza o estado dos indicadores
+  document.querySelectorAll('.indicator').forEach((indicator, i) => {
+    if (i === index) {
+      indicator.classList.add('active');
+    } else {
+      indicator.classList.remove('active');
+    }
+  });
+}
+
+// Inicia o carrossel no primeiro slide
+goToSlide(0);
+
