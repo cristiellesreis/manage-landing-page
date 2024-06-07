@@ -327,7 +327,7 @@ body{
 
 .email input{
     height: 2.5rem;
-    width: 12rem;
+    width: 15rem;
     border-radius: 1.5rem;
     border: none;
     text-align: center;
@@ -340,6 +340,20 @@ body{
     font-family: var(--font);
     opacity: .6;
     font-size:13px;
+}
+
+
+.mensagem-erro{
+    text-align: left;
+    font-family: var(--font);
+    color: rgb(252, 52, 52);
+    font-size: 12px;
+    padding: .5rem 0rem 0rem .5rem;
+}
+
+.email-error{
+    border: 1px solid red !important;
+    color: red;
 }
 
 footer{
@@ -609,7 +623,6 @@ footer{
     .overlay.show {
         display: block;
     }
-
 }
 
 

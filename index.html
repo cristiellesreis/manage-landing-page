@@ -17,14 +17,12 @@
     <header>
       <nav>
         <div class="nav-bar">
-
           <div>
             <img src="images/logo.svg" alt="logotipo">
           </div>
           <div class="mobile-menu-icon">
             <button onclick="menuShow()"><i class="fa-solid fa-bars fa-2xl icon"></i></button>
           </div>
-          
           <div class="nav-list">
             <ul>
               <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
@@ -34,13 +32,11 @@
               <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
             </ul>
           </div>
-
           <div class="login-button">
             <button class="botao-start">Get Started</button>
           </div>
         </div>
       </nav>
-      
       <div class="menu-mobile">
         <ul>
           <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
@@ -50,7 +46,6 @@
           <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
         </ul>
       </div>
-
       <div class="overlay"></div>
     </header>
 
@@ -64,7 +59,6 @@
           </div>
           <img src="images/illustration-intro.svg" alt="">
         </section>
-
         <section class="conteudo-info">
           <div class="container-info">
               <h2>What's different about Manage?</h2>
@@ -91,7 +85,6 @@
             </div>
           </div>
         </section>
-
         <section class="comentarios">
           <h2>What they've said</h2>
           <div class="carrossel">
@@ -119,9 +112,6 @@
             </div>
             <div class="indicators"></div>
           </div>
-
-          
-
           <div>
             <button class="botao-start">Get Started</button>
           </div>
@@ -130,7 +120,6 @@
     </main>
 
     <footer>
-
       <section>
         <div class="rodape-banner">
           <div>        
@@ -141,11 +130,9 @@
           </div>
         </div>
       </section>
-
       <section>
         <div class="rodape">
           <div class="logo-icones">
-            
             <div><img src="/images/logo-footer.svg" alt=""></div>
             <div class="icones-redes">
               <a href="#"><img class="svg-img" src="/images/icon-facebook.svg" alt="">
@@ -156,7 +143,6 @@
               <a href="#"><img class="svg-img" src="/images/icon-instagram.svg" alt=""></a>
             </div>
           </div>
-
           <div class="rodape-menu">
             <a href="#">Home</a>
             <a href="#">Careers</a>
@@ -166,19 +152,18 @@
             <a href="#">Privacy Policy</a>
             <a href="#">About Us</a>
           </div>
-
-            <div class="rodape-email">
-              <div class="email">
-              <input type="text" placeholder="Updates in your inbox...">      
-              <button class="botao-email">Go</button>
-              </div>
-              <div class="copyright">
-                <span>Copyright 2020. All Rights Reserved.</span>
-              </div>
+          <div class="rodape-email">
+            <div class="email">
+              <input id="campo-email" type="text" placeholder="Updates in your inbox...">      
+              <button type="button" class="botao-email" id="botao-go">Go</button>
+              <div class="mensagem-erro" style="display: none;" id="mensagem-erro"><span>Please insert a valid email</span></div>
             </div>
+            <div class="copyright">
+              <span>Copyright 2020. All Rights Reserved.</span>
+            </div>
+          </div>
         </div>
       </section>
-
     </footer>
 
     <script src="assets/arquivo.js"></script>

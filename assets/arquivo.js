@@ -1,3 +1,4 @@
+// menu mobile
 
 function menuShow() {
     let menuMobile = document.querySelector('.menu-mobile');
@@ -21,11 +22,11 @@ function menuShow() {
     }
 }
 
+//carrossel mobile
 
 const slides = document.querySelector('.slides');
 const indicatorsContainer = document.querySelector('.indicators');
 
-// Cria um indicador para cada slide
 document.querySelectorAll('.slide').forEach((slide, index) => {
   const indicator = document.createElement('div');
   indicator.classList.add('indicator');
@@ -42,7 +43,6 @@ function goToSlide(index) {
   const translateValue = -index * 100 + '%';
   slides.style.transform = 'translateX(' + translateValue + ')';
 
-  // Atualiza o estado dos indicadores
   document.querySelectorAll('.indicator').forEach((indicator, i) => {
     if (i === index) {
       indicator.classList.add('active');
@@ -52,6 +52,27 @@ function goToSlide(index) {
   });
 }
 
-// Inicia o carrossel no primeiro slide
 goToSlide(0);
+
+// validação no campo de email
+
+document.getElementById('botao-go').addEventListener('click', function(event) {
+
+  const emailInput = document.getElementById('campo-email');
+  const errorMessage = document.getElementById('mensagem-erro');
+  const email = emailInput.value;
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
+      emailInput.classList.add('email-error');
+      errorMessage.style.display = 'block';
+  } else {
+      emailInput.classList.remove('email-error');
+      errorMessage.style.display = 'none';
+  }
+});
+
+
+
 
